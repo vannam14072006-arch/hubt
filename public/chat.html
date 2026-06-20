@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>ChatHub</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<div class="side">
+
+
+<h2>💬 ChatHub</h2>
+
+
+
+<h3>
+Online
+</h3>
+
+
+<div id="online"></div>
+
+
+
+<h3>
+Rooms
+</h3>
+
+
+<button onclick="joinRoom('general')">
+🌎 General
+</button>
+
+
+<button onclick="joinRoom('IT')">
+💻 IT
+</button>
+
+
+<button onclick="joinRoom('game')">
+🎮 Game
+</button>
+
+
+
+<button onclick="logout()">
+Logout
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="chat">
+
+
+<div class="top">
+
+💬 ChatHub Room
+
+<span style="float:right">
+
+🟢 Online
+
+</span>
+
+
+</div>
+
+
+
+<div id="messages"></div>
+
+
+
+
+
+<div class="send">
+
+
+<input id="text"
+placeholder="Nhập tin nhắn...">
+
+
+<button onclick="send()">
+➤
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="chat.js"></script>
+
+
+</body>
+
+</html>

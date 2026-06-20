@@ -1,0 +1,370 @@
+*{
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial;
+}
+
+
+body{
+
+    margin:0;
+
+    background:
+    linear-gradient(135deg,#0f172a,#1e293b);
+
+    color:white;
+
+}
+
+
+/* LOGIN */
+
+.auth{
+
+    width:380px;
+
+    margin:100px auto;
+
+    padding:35px;
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 50px #000;
+
+
+    text-align:center;
+
+}
+
+
+
+.auth h1{
+
+    font-size:40px;
+
+}
+
+
+
+input{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+
+    border-radius:15px;
+
+    border:none;
+
+
+    background:#0f172a;
+
+    color:white;
+
+}
+
+
+
+button{
+
+
+    width:100%;
+
+    padding:14px;
+
+    margin:7px 0;
+
+
+    border:none;
+
+    border-radius:15px;
+
+
+    background:#3b82f6;
+
+    color:white;
+
+    cursor:pointer;
+
+
+    font-size:16px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.green{
+
+    background:#22c55e;
+
+}
+
+
+
+
+
+/* CHAT APP */
+
+
+.app{
+
+
+    height:100vh;
+
+    display:flex;
+
+
+}
+
+
+
+/* SIDEBAR */
+
+
+.side{
+
+
+    width:280px;
+
+
+    background:
+
+    rgba(2,6,23,.85);
+
+
+    padding:25px;
+
+
+    border-right:
+
+    1px solid #334155;
+
+
+}
+
+
+
+.side h2{
+
+    font-size:28px;
+
+}
+
+
+
+.side button{
+
+
+    background:#1e293b;
+
+
+}
+
+
+
+.side button:hover{
+
+    background:#334155;
+
+}
+
+
+
+
+
+/* CHAT */
+
+
+.chat{
+
+
+    flex:1;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+}
+
+
+
+.top{
+
+
+    padding:22px;
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    font-size:22px;
+
+
+    border-bottom:
+
+    1px solid #334155;
+
+}
+
+
+
+
+
+
+
+#messages{
+
+
+    flex:1;
+
+
+    padding:25px;
+
+
+    overflow:auto;
+
+
+}
+
+
+
+
+
+.bubble{
+
+
+    background:#334155;
+
+
+    padding:15px 20px;
+
+
+    border-radius:20px;
+
+
+    margin:12px;
+
+
+    width:max-content;
+
+
+    max-width:450px;
+
+
+    animation:
+
+    show .3s;
+
+
+}
+
+
+
+
+.me{
+
+
+    margin-left:auto;
+
+
+    background:#2563eb;
+
+
+}
+
+
+
+
+@keyframes show{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+
+
+
+.send{
+
+
+    display:flex;
+
+
+    padding:20px;
+
+
+    background:#020617;
+
+
+}
+
+
+
+
+.send input{
+
+
+    flex:1;
+
+
+    margin:0;
+
+
+}
+
+
+
+
+.send button{
+
+
+    width:70px;
+
+    margin-left:10px;
+
+
+}
